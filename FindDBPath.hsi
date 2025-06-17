@@ -46,8 +46,8 @@ if (_intArrSize == 0)
 // {{ 3 1 0 "2bdb9f29_282f_46e1_898edfb16c0b32e3" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 4 1 0 "2150188c_ee5a_4b07_8482d63e477b5f07" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-_strFolderPath = FilGetConfigPath();
+// {{{ 4 1 0 "42438e1f_a5d5_417d_a68078b3533a86f8" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+_strFolderPath = FilGetMethodsPath();
 // }} ""
 // {{ 5 1 0 "2baed0bf_fe45_455c_b1ca5c2c2f38e911" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 {
@@ -61,11 +61,11 @@ o_arrConfigFilePaths.SetSize(0);
 // {{ 7 1 0 "523f28a2_2d7b_441d_8ca0025ccb5bda55" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{{ 8 1 0 "70012efc_65cd_4a8c_af50bf90008d4292" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-_strAccessDBFilePath = StrConcat2(_strFolderPath, Translate("\\SGE\\CellCultureTracking.mdb"));
+// {{{ 8 1 0 "159b5152_5b83_4049_9e6ef4d0ba9f1c9e" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+_strAccessDBFilePath = StrConcat2(_strFolderPath, Translate("\\AutomatedCellCulture\\Config\\CellCultureTracking.mdb"));
 // }} ""
-// {{{ 9 1 0 "bb30d78c_3e2c_4416_9042dccb7c31cbaa" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-_strJSONConfigFilePath = StrConcat2(_strFolderPath, Translate("\\SGE\\CellCultureSettings.json"));
+// {{{ 9 1 0 "f77c7329_2c12_477f_9f57bb1c9ee8b26b" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
+_strJSONConfigFilePath = StrConcat2(_strFolderPath, Translate("\\AutomatedCellCulture\\Config\\CellCultureSettings.json"));
 // }} ""
 // {{ 10 1 0 "56d88bba_6dbf_4988_8be2380d98992d1e" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
@@ -98,57 +98,33 @@ if (_rtnSuccess == 0)
 // {{ 18 1 0 "d051df76_13fd_4d11_bc1cf645c21fdbdf" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 19 1 0 "c781b195_a444_4fca_b7257f1acab64a68" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-if (_loopCounter1 == 1)
-{
-// }} ""
-// {{ 20 1 0 "89681cd6_c129_4ca4_814b784e8de684d7" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
-
-// }} ""
-// {{{ 21 1 0 "570fc35f_9238_45b0_ab2f8868c387a560" "{C1F3C015-47B3-4514-9407-AC2E65043419}"
-_strFolderPath = StrConcat4(Translate("C:\\Program Files (x86)\\HAMILTON"), Translate("\\STARplusGitHub"), Translate("\\Config"), Translate(""));
-// }} ""
-// {{ 22 1 0 "e6aa1027_60e9_46a0_9e2a5869aa33e637" "{B31F3533-5D80-11d4-A5EB-0050DA737D89}"
-break;
-// }} ""
-// {{ 23 1 0 "c781b195_a444_4fca_b7257f1acab64a68" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-}
-else
-{
-// }} ""
-// {{ 24 1 0 "11db5fe6_2a90_49f9_87922dcb7ee64854" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
-
-// }} ""
 Trace("!! Hamilton could not locate ", o_arrConfigFilePaths[_loopCounter1]);
-// {{ 26 1 0 "49b64226_071b_4c3a_811e18bd86a661a5" "{930D6C31-8EFB-11d4-A3BA-002035848439}"
+// {{ 20 1 0 "49b64226_071b_4c3a_811e18bd86a661a5" "{930D6C31-8EFB-11d4-A3BA-002035848439}"
 abort;
 // }} ""
-// {{ 27 1 0 "c781b195_a444_4fca_b7257f1acab64a68" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 21 1 0 "120fe96d_0a30_437e_b4231ebf5fe84a6a" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{ 28 1 0 "120fe96d_0a30_437e_b4231ebf5fe84a6a" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
-}
-// }} ""
-// {{ 29 1 0 "7ff265ff_9a7f_407e_97b0c4c2ef7118f2" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 22 1 0 "7ff265ff_9a7f_407e_97b0c4c2ef7118f2" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 }
 }
 // }} ""
-// {{ 30 1 0 "2baed0bf_fe45_455c_b1ca5c2c2f38e911" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 23 1 0 "2baed0bf_fe45_455c_b1ca5c2c2f38e911" "{B31F3532-5D80-11d4-A5EB-0050DA737D89}"
 }
 }
 // }} ""
-// {{ 31 1 0 "adf84ed5_f815_4aff_b72352cc4e698b4d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 24 1 0 "adf84ed5_f815_4aff_b72352cc4e698b4d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 else
 {
 // }} ""
-// {{ 32 1 0 "98f3bbea_31e2_4725_b320ae21aaa2cff1" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
+// {{ 25 1 0 "98f3bbea_31e2_4725_b320ae21aaa2cff1" "{F07B0071-8EFC-11d4-A3BA-002035848439}"
 
 // }} ""
-// {{ 33 1 0 "adf84ed5_f815_4aff_b72352cc4e698b4d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
+// {{ 26 1 0 "adf84ed5_f815_4aff_b72352cc4e698b4d" "{B31F3531-5D80-11d4-A5EB-0050DA737D89}"
 }
 // }} ""
-// {{{ 34 1 0 "7ae6f292_50e3_4dac_9587e0aa279bd3eb" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
+// {{{ 27 1 0 "7ae6f292_50e3_4dac_9587e0aa279bd3eb" "{9EC997CD-FD3B-4280-811B-49E99DCF062C}"
 return;
 // }} ""
 // {{{ 5 "GetFilePaths" "End"
@@ -158,4 +134,4 @@ return;
 // {{{ 2 "LibraryNamespace" "End"
 } // library namespace
 // }} ""
-// $$author=ch33$$valid=0$$time=2025-02-13 09:48$$checksum=eee05c82$$length=083$$
+// $$author=ch33$$valid=0$$time=2025-06-17 14:34$$checksum=21b2ff8a$$length=083$$
